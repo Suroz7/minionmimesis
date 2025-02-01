@@ -1,0 +1,42 @@
+{
+  "name": "mimesis-minion",
+  "displayName": "Minionmimesis",
+  "description": "A VS Code extension to chat with LLaMA 3.2",
+  "version": "0.0.1",
+  "publisher": "Mimesis",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:minion.MinionsAssemble"
+  ],
+  "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suroz7/minion"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "minion.MinionsAssemble",
+        "title": "Minions Assemble"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3",
+    "vscode": "^1.1.37",
+    "vsce": "^2.3.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
