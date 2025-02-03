@@ -1,6 +1,7 @@
 # Minion
 
-A VS Code extension to chat with LLaMA 3.2.
+A VS Code extension to chat with LLaMA 3.2 locally
+maeksure you download the chat model before deploy
 
 ## Features
 
