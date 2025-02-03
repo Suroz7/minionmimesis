@@ -1,0 +1,78 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\srzgr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add complile
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;%NVM_HOME%;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Users\srzgr\.local\share\solana\install\active_release\bin;C:\Users\srzgr\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2020.2\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2\bin;;C:\Users\srzgr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\srzgr\.dotnet\tools;C:\Users\srzgr\AppData\Local\GitHubDesktop\bin;C:\ProgramData\srzgr\GitHubDesktop\bin;%NVM_HOME%;C:\Program Files\nodejs;C:\Users\srzgr\AppData\Roaming\npm;;C:\Users\srzgr\AppData\Local\Programs\Ollama;c:\Users\srzgr\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  21.1.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/complile: Not found
+      at params.callback [as _callback] (C:\Users\srzgr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67029:18)
+      at self.callback (C:\Users\srzgr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140883:22)
+      at Request.emit (node:events:515:28)
+      at Request.<anonymous> (C:\Users\srzgr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141855:10)
+      at Request.emit (node:events:515:28)
+      at IncomingMessage.<anonymous> (C:\Users\srzgr\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141777:12)
+      at Object.onceWrapper (node:events:629:28)
+      at IncomingMessage.emit (node:events:527:35)
+      at endReadableNT (node:internal/streams/readable:1589:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "mimesis-minion",
+    "displayName": "Minionmimesis",
+    "description": "A VS Code extension to chat with LLaMA 3.2",
+    "version": "0.0.3",
+    "publisher": "Mimesis",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onCommand:minion.MinionsAssemble",
+      "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/suroz7/minion"
+    },
+    "contributes": {
+      "commands": [
+        {
+          "command": "minion.MinionsAssemble",
+          "title": "MinionsAssemble"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./",
+      "package": "vsce package"
+    },
+    "devDependencies": {
+      "typescript": "^4.4.3",
+      "vscode": "^1.1.37",
+      "vsce": "^2.3.3"
+    },
+    "dependencies": {
+      "axios": "^0.21.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
